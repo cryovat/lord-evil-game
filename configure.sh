@@ -6,7 +6,9 @@ if [ ! -d "external/ldoc" ]; then
     git clone https://github.com/cryovat/frost.git external/frost
 
     # Make sure the frost repo pulls down externals and such
-    sh external/frost/configure.sh
+    pushd external/frost
+    sh configure.sh
+    popd
 fi
 
 # If the frost fw folder hasn't been symlinked into
