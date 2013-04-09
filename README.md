@@ -20,7 +20,7 @@ Building/distribution
 ---------------------
 
 The following shell commands should configure a proper development
-environment:
+environment. The scripts assume an Unix-like environment.
 
     git clone https://github.com/cryovat/lord-evil-game
     cd lord-evil-game
