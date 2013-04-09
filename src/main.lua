@@ -1,3 +1,7 @@
+if enable_fabulous_frost_dev_hack then
+   package.path = package.path .. ";external/frost/src/?.lua"
+end
+
 local fw = require "fw.init"
 local menu = fw.menu
 local loader = require "loader"
