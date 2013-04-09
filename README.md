@@ -13,7 +13,7 @@ Dependencies
 
 For development aid:
 
- * [LDoc](https://github.com/stevedonovan/LDoc) by (stevedonovan)[https://github.com/stevedonovan]
+ * [LDoc](https://github.com/stevedonovan/LDoc) by [stevedonovan](https://github.com/stevedonovan)
  * bash, iwatch, lua 5.1, sed and zip
 
 Building/distribution
