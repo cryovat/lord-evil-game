@@ -1,0 +1,3 @@
+[submodule "external/frost"]
+	path = external/frost
+	url = https://github.com/cryovat/frost
