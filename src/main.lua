@@ -1,8 +1,15 @@
-if enable_fabulous_frost_dev_hack then
-   package.path = package.path .. ";external/frost/src/?.lua"
+local fw = 0
+
+function loadFw()
+   fw = require "fw.init"
 end
 
-local fw = require "fw.init"
+if not pcall(loadFw) then -- Game is in "dev" mode, get fw from submodule:
+   print("Embedded fw loading failed. Appending package path.")
+   package.path = package.path .. ";external/frost/src/?.lua"
+   loadFw()
+end
+
 local menu = fw.menu
 local loader = require "loader"
 local Storyscreen = require "Storyscreen"
