@@ -25,6 +25,7 @@ maintenance operations like rebuilding documentation.
 To get started:
 
     git clone https://github.com/cryovat/lord-evil-game
+    cd lord-evil-game
     make init
 
 Make targets:
