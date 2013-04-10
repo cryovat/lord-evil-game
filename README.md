@@ -22,7 +22,9 @@ Building/distribution
 The following shell commands should configure a proper development
 environment. The scripts assume an Unix-like environment.
 
-    git clone https://github.com/cryovat/lord-evil-game
+The repo depends on submodules, so the --recursive switch is critical!
+
+    git clone --recursive https://github.com/cryovat/lord-evil-game
     cd lord-evil-game
     ./configure.sh
 
