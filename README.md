@@ -14,28 +14,29 @@ Dependencies
 For development aid:
 
  * [LDoc](https://github.com/stevedonovan/LDoc) by [stevedonovan](https://github.com/stevedonovan)
- * bash, iwatch, lua 5.1, sed and zip
+ * make, bash, iwatch, lua 5.1, sed and zip
 
 Building/distribution
 ---------------------
 
-The following shell commands should configure a proper development
-environment. The scripts assume an Unix-like environment.
+The project uses GNU Make for setup/building/launching the game and
+maintenance operations like rebuilding documentation.
 
-The repo depends on submodules, so the --recursive switch is critical!
+To get started:
 
-    git clone --recursive https://github.com/cryovat/lord-evil-game
-    cd lord-evil-game
-    ./configure.sh
+    git clone https://github.com/cryovat/lord-evil-game
+    make init
 
-To monitor source directory and regenerate documentation upon source
-file changes (requires iwatch and lua 5.1):
+Make targets:
 
-    ./docmon.sh
-
-To create a zip distribution of the game:
-
-    ./distribute.sh (generates .love and bundle .zip in dist folder)
+ * *all* - Default target. Calls init, clean and dist
+ * *help* - Shows available targets
+ * *init* - Initializes the development environment
+ * *run* - Runs game in debug mode (updates submodules if needed)
+ * *fastrun* - Runs game in debug mode without updating submodules
+ * *clean* - Removes dist files and docs
+ * *dist* - Creates distribution .love and .zip
+ * *rundist* - Creates distribution and runs the generated file
 
 Past versions
 -------------
