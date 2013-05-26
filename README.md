@@ -5,6 +5,15 @@ This game was originally conceived as an entry to Ludum Dare 25. It is
 a retro platformer, featuring an evil mastermind in his quest to avoid
 intergalactic justice.
 
+Screenshots
+-----------
+
+Some screens from the current state of the game. All graphics are subject to change.
+
+![screenshot 1](screenshot1.png "Title menu")
+![screenshot 2](screenshot2.png "Story screen")
+![screenshot 3](screenshot3.png "Ingame")
+
 Dependencies
 ------------
 
